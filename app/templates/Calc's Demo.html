@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc's Demonstration Of Seperation Of Concerns</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        p {color: black}
+        h4{color: black}
+    </style>
+</head>
+<body style="background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <a class="navbar-brand" href="#">Articles For Web Development</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="p2index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Pages
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdownlink" href="Pylint%20-%20Tips%20&%20Tricks.html">Pylint</a></li>
+                        <li><a class="dropdownlink" href="OOP's%20Terms%20Glossary.html">OOP's Terms Glossary</a></li>
+                        <li><a class="dropdownlink" href="Testing%20-%20AAA.html">Testing - AAA</a></li>
+                        <li><a class="dropdownlink" href="OOP's%20Concepts.html">OOP's Concepts</a></li>
+                        <li><a class="dropdownlink" href="Calc's%20Demo.html">Seperation Of Concerns</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid padding">
+    <br><br><br>
+    <img src="maxresdefault.jpg" width="600" height="500">
+    <div class="row padding">
+        <div class="col-lg-11">
+            <div class="body-content">
+                <br><br>
+                <h4>Calc's Demonstration Of Seperation Of Concerns</h4>
+                <p>A cornerstone of clear code is the division of its various behaviors into small, manageable pieces. Clear code requires you to keep less knowledge in your head at any given time, making the code simpler to reason about. Short segments of code with clear intent are a big step in this direction, but bits of code should not be broken up along arbitrary boundaries. Separating them by concern is an effective approach.</p>
+                <p>A concern is a distinct behavior or piece of knowledge your software deals with. Concerns can range in granularity from how to calculate a square root to how payments are managed in an e-commerce system.</p>
+                <p><u>In our Program :-</u></p>
+                <p>The Seperation of Concerns concept is used in our Calculator program in  a way that the class calculator is divided into seperate classes like addition, subtraction, multiplication and division. The class calculation in the program Calculation has the declaration of the object and the variables and the class is used as a parameters to all the other classe</p>
+                <p>The program Calculator_test is used to write the custom test cases for the calculator.</p>
+                <p>The program Main is used to define the methods for the operations of the calculator.</p>
+                <p>The program Addition,subtraction, multiplication and division is used to perform their operations respectively.</p>
+                <p>THe program Calculator is used to declare the methods and print the end result of the calculator.</p>
+                <br><img src="soc.jpg" width="600" height="500">
+                <p> Click here to go to the Home page :- <a href="p2index.html">Home</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+</body>
+
+</html>
