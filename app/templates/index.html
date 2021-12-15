@@ -7,9 +7,17 @@
     </style>
 {% endblock %}
 {% block content %}
-    <h1>Index I should see this change with a page refresh</h1>
-    <p class="important">
-      Welcome to my awesome homepage.
-        <img src="{{ url_for('static', filename='') }}">
-    </p>
+    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+    <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+        <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+        <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img alt="First slide" class="d-block w-100" src="{{ url_for('static', filename='images/web.png') }}">
+        </div>
+        <div class="carousel-item">
+            <img alt="Second slide" class="d-block w-100" src="{{ url_for('static', filename='images/python.png') }}">
+        </div>
 {% endblock %}
